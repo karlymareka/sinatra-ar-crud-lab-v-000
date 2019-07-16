@@ -35,7 +35,7 @@ class ApplicationController < Sinatra::Base
   
   get '/articles/:id/edit' do
     @article = Article.find_by(params[:id])
-    erb :edit
+    #erb :edit
     redirect "/articles/#{@article.id}"
   end 
   
