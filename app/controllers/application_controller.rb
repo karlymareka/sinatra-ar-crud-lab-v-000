@@ -44,8 +44,7 @@ class ApplicationController < Sinatra::Base
     @article.update(title: params[:title], content: params[:content])
     @article.save
     #redirect "/articles/#{@article.id}"
-    erb :edit 
-    
+    redirects to '/articles/:id
   end
   
   
