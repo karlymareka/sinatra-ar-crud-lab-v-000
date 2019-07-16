@@ -49,12 +49,12 @@ class ApplicationController < Sinatra::Base
   get '/articles/:id/delete' do 
     erb :show 
   end 
-=begin  
+ 
   delete '/articles/:id' do 
      @article = Article.find_by(params[:id])
      @article.delete
      redirect "/articles/#{@article.id}"
   end 
-=end   
+  
   
 end
