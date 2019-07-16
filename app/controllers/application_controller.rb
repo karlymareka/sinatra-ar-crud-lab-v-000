@@ -45,7 +45,7 @@ class ApplicationController < Sinatra::Base
     @article.save
     redirect "/articles/#{@article.id}"
   end
-  
+=begin  
   get '/articles/:id/delete' do 
     erb :show 
   end 
@@ -55,6 +55,6 @@ class ApplicationController < Sinatra::Base
      @article.delete
      redirect "/articles/#{@article.id}"
   end 
-  
+=end   
   
 end
